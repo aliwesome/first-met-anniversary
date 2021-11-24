@@ -7,19 +7,43 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="assets/static/favicon.ico">
-        <link href="tailwind.min.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
 
         <title>سومین سالگرد آشنایی</title>
-
-        <!-- Bootstrap core CSS -->
     </head>
+    <style>
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .main {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 64px;
+        }
+        .title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        .paragraph {
+            margin-top: 16px;
+        }
+        .player {
+            margin: 0 auto;
+            margin-top: 16px;
+        }
+    </style>
     <body>
         <section style="direction: rtl;">
-            <div class="flex h-screen justify-center items-center">
-                <div class="mt-8 flex flex-col items-center justify-center px-16">
-                    <h1 class="text-xl font-bold">سومین سالگرد آشنایی‌مون</h1>
-                    <p class="mt-4">
+            <div class="container">
+                <div class="main">
+                    <h1 class="title">سومین سالگرد آشنایی‌مون</h1>
+                    <p class="paragraph">
                         تو منو دلگرم میکنی به زیستن ...
                         <br>
                         میتونم با تو از دلخوری هام حرف بزنم و آروم بشم ،میتونم عصر های دلگیر پاییز با تو قهوه بخورم و از خاطرات خوبمون حرف بزنم و باهات رویاهای قشنگ ببافم
@@ -33,7 +57,7 @@
                         <br>
                         سومین سالگرد بودنت به مبارک ترین حالت ممکن ❤️
                     </p>
-                    <audio controls class="mt-6 mx-auto" autoplay>
+                    <audio controls class="player" autoplay>
                         <source src="assets/mesle-fereshte-ha.mp3" type="audio/mpeg">
                     </audio>
                 </div>
